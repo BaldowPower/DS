@@ -225,7 +225,7 @@ const refreshtime = 10; // in Minuten
 
 
 
-const url = ['https://raw.githubusercontent.com/BaldowPower/DS/main/player_ids.json']
+const url = ['https://raw.githubusercontent.com/BaldowPower/DS/main/player_ids']
 
 async function startBuilding() {
     var win = typeof unsafeWindow != 'undefined' ? unsafeWindow : window;
