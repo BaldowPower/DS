@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Feen Ausbauscript
 // @author       Temerion + Baldow
-// @include      https://de*.die-staemme.de/*game.php*screen=overview_villages*
+// @include      https://*game.php*screen=overview_villages*
 // @grant        GM.setValue
 // @grant        GM.getValue
 // @grant        GM.xmlHttpRequest
@@ -298,7 +298,7 @@ async function startBuilding() {
         // Spalte mit BH und Konstrukion ermitteln
         for (var i = 0; i < spalten.length; i++){
             if (spalten[i].innerHTML.match(/order=farm/)) spBH = i + 1;
-            if (spalten[i].innerHTML.match(/Konstruktion/)) spConstruction = i + 1;
+            if (spalten[i].innerHTML.match(/order=wall/)) spConstruction = i + 2;
         }
 
         document.getElementById('get_all_possible_build').click();
